@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="Chat pessoal" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Lunna AI</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+
+    <div id="chat-container">
+        <header id="header">
+            <div class="user-info">
+                <img class="perfil" src="lunna.png" alt="perfil">
+                <div class="text-info">
+                    <span class="name">Lunna Assistente</span>
+                    <span class="status">Online</span>
+                </div>
+            </div>
+            <button id="btnLimpar" title="Limpar conversa">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/></svg>
+            </button>
+        </header>
+        
+        <main id="mensagens"></main>
+
+        <div class="input-wrapper">
+            <div class="input-area">
+                <input type="text" id="entradaUsuario" placeholder="Mensagem" autocomplete="off">
+                <button id="btnEnviar">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M2.01 21L23 12L2.01 3L2 10L17 12L2 14L2.01 21Z"/></svg>
+                </button>
+            </div>
+            <p class="disclaimer">A Lunna pode cometer erros.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
